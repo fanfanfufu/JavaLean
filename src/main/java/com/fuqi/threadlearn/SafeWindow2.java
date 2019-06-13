@@ -1,7 +1,7 @@
 package com.fuqi.threadlearn;
 
 /**
- * @Description:
+ * @Description: 使用同步代码块的方式解决继承Thread类的县城安全问题。
  * @Author 傅琦
  * @Date 2019/6/13 16:05
  * @Version V1.0
@@ -14,7 +14,7 @@ public class SafeWindow2 extends Thread{
     @Override
     public void run() {
         while (true){
-            synchronized (object){
+            synchronized (SafeWindow2.class){
                 if (ticket > 0){
                     System.out.println(getName() + ": " + ticket);
                     ticket--;
