@@ -17,6 +17,7 @@ public class ThreadPoolLearn1 {
         ExecutorService executorService = new ThreadPoolExecutor(5, 10, 2000L ,TimeUnit.MILLISECONDS,
                 new LinkedBlockingQueue<Runnable>(1024), namedThreadFactory, new ThreadPoolExecutor.AbortPolicy());
 
+//        ExecutorService executorService = Executors.newFixedThreadPool(10);
         // 设置线程池的属性
         // ThreadPoolExecutor service = (ThreadPoolExecutor) executorService;
         // service.setCorePoolSize(5);
