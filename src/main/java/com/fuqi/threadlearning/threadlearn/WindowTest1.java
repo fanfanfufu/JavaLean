@@ -1,4 +1,4 @@
-package com.fuqi.threadlearn;
+package com.fuqi.threadlearning.threadlearn;
 
 /**
  * @Description: 创建三个窗口买票，总票数为100张

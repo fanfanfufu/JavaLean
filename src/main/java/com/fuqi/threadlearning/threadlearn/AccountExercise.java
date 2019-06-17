@@ -1,4 +1,4 @@
-package com.fuqi.threadlearn;
+package com.fuqi.threadlearning.threadlearn;
 
 /**
  * @Description: 由两个储户分别向同一个账户存3000元，每次存1000，存3次。每次存完打印账户余额。

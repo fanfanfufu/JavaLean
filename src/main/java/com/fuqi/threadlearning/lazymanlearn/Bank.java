@@ -1,4 +1,4 @@
-package com.fuqi.lazymanlearn;
+package com.fuqi.threadlearning.lazymanlearn;
 
 /**
  * @Description:

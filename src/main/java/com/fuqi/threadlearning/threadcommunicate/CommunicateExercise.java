@@ -1,4 +1,4 @@
-package com.fuqi.threadcommunicate;
+package com.fuqi.threadlearning.threadcommunicate;
 
 /**
  * @Description: 实现两个线程交替打印1-100的数

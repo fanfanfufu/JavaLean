@@ -1,4 +1,4 @@
-package com.fuqi.threadlearn;
+package com.fuqi.threadlearning.threadlearn;
 
 /**
  * @Description: 用同步代码块的方式解决Runnable实现方式下线程安全问题的练习：

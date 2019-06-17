@@ -1,4 +1,4 @@
-package com.fuqi.deadlocklearn;
+package com.fuqi.threadlearning.deadlocklearn;
 
 /**
  * @Description: 死锁问题的演示二

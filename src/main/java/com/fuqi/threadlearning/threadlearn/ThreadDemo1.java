@@ -1,4 +1,4 @@
-package com.fuqi.threadlearn;
+package com.fuqi.threadlearning.threadlearn;
 
 /**
  * @Description: 多线程实现方式一的练习

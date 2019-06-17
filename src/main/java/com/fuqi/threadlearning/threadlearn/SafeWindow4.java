@@ -1,4 +1,4 @@
-package com.fuqi.threadlearn;
+package com.fuqi.threadlearning.threadlearn;
 
 /**
  * @Description: 使用同步方法来处理继承自Thread类的线程安全问题

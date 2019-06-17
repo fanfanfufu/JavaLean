@@ -1,4 +1,4 @@
-package com.fuqi.locklearn;
+package com.fuqi.threadlearning.locklearn;
 
 import java.util.concurrent.locks.ReentrantLock;
 

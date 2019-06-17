@@ -1,4 +1,4 @@
-package com.fuqi.threadcommunicate;
+package com.fuqi.threadlearning.threadcommunicate;
 
 /**
  * @Description: 生产者/消费者问题

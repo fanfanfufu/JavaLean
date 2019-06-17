@@ -1,4 +1,4 @@
-package com.fuqi.newcreatemethods;
+package com.fuqi.threadlearning.newcreatemethods;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

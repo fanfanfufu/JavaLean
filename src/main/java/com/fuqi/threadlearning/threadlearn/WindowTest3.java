@@ -1,14 +1,14 @@
-package com.fuqi.threadlearn;
+package com.fuqi.threadlearning.threadlearn;
 
 /**
- * @Description:
+ * @Description: 线程安全问题的示例，出现0、-1的概率会很大
  * @Author 傅琦
- * @Date 2019/6/12 20:25
+ * @Date 2019/6/13 15:28
  * @Version V1.0
  */
-public class WindowTest2 {
+public class WindowTest3 {
     public static void main(String[] args){
-        TicketWindow window = new TicketWindow();
+        Window3 window = new Window3();
 
         Thread t1 = new Thread(window);
         Thread t2 = new Thread(window);
@@ -24,12 +24,19 @@ public class WindowTest2 {
     }
 }
 
-class TicketWindow implements Runnable{
+class Window3 implements Runnable{
     private int ticket = 100;
     @Override
     public void run() {
         while (true){
             if (ticket > 0){
+                // 不解决线程问题的情况下：加上休眠时间，就使得出现0、-1的概率增加了很多
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+
+                }
+
                 System.out.println(Thread.currentThread().getName() + ": " + ticket);
                 ticket--;
             }else {

@@ -1,4 +1,4 @@
-package com.fuqi.newcreatemethods;
+package com.fuqi.threadlearning.newcreatemethods;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
