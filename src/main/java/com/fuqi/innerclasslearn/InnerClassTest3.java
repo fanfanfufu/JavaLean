@@ -2,9 +2,9 @@ package com.fuqi.innerclasslearn;
 
 /**
  * @Description: 局部内部类学习2
- * @Author 傅琦
- * @Date 2019/6/18 20:34
- * @Version V1.0
+ * @author 傅琦
+ * @date 2019/6/18 20:34
+ * @version V1.0
  */
 public class InnerClassTest3 {
     /**
