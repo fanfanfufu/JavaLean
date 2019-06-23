@@ -58,4 +58,8 @@ public class Person implements Serializable {
         System.out.println("my nation = " + nation);
         return nation;
     }
+
+    private static void showDesc(){
+        System.out.println("Hello, World!");
+    }
 }
