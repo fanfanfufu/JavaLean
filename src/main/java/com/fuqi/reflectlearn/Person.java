@@ -11,8 +11,8 @@ import java.io.Serializable;
 public class Person implements Serializable {
     private static final long serialVersionUID = -6710807211838433643L;
 
-    public String name;
-    private int age;
+    private String name;
+    public int age;
 
     public Person() {
     }
@@ -55,7 +55,7 @@ public class Person implements Serializable {
     }
 
     private String showNation(String nation){
-        System.out.println("my nation= " + nation);
+        System.out.println("my nation = " + nation);
         return nation;
     }
 }
