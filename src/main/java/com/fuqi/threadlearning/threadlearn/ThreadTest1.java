@@ -37,7 +37,7 @@ public class ThreadTest1 {
         while (true) {
             if (allThreadTerminated(threads)){
                 // 所有线程运行结束
-                // 期望输出结果为：100000，但是该结果不一定保证每次运行都有
+                // 期望输出结果为：100000，但是该结果不一定保证每次运行都有100000
                 System.out.println(count.get());
                 break;
             }
