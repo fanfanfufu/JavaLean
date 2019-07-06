@@ -15,7 +15,9 @@ public class question001 {
     public static void main(String[] args) {
         String str1 = "通话";
         String str2 = "重地";
+        // true
         System. out. println(String. format("str1：%d | str2：%d",  str1. hashCode(),str2. hashCode()));
+        // false
         System. out. println(str1. equals(str2));
     }
 }
