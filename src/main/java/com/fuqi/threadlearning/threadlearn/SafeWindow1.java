@@ -12,6 +12,8 @@ public class SafeWindow1 implements Runnable{
     public void run() {
         while (true){
             // 采用同步代码块的方式来解决线程安全问题，虽然会损失部分性能
+            // 在实现Runnable接口创建多线程的方式中：
+            // 可以使用this作为同步监视器，this表示使用当前对象作为锁
             synchronized (this){
                 if (ticket > 0){
                     System.out.println(Thread.currentThread().getName() + ": " + ticket);
