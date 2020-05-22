@@ -30,6 +30,7 @@ class Number implements Runnable{
             synchronized (this) {
                 // 唤醒在等待的线程
                 // notify()只唤醒一个休眠的线程，有多个的情况下，先唤醒优先级高的；notifyAll()则唤醒所有在休眠的线程
+                // 若锁不是当前类对象，需要通过obj.notify()来唤醒一个休眠线程
                 notify();
 
                 if (number <= 100){
