@@ -4,6 +4,10 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @Description: 使用Lock解决线程安全问题
+ *
+ * 不同于synchronized机制在执行完相应的同步代码块以后，自动释放同步监视器，
+ * Lock需要手动启动同步(lock())，手动结束同步(unlock())
+ *
  * @Author 傅琦
  * @Date 2019/6/14 20:58
  * @Version V1.0
