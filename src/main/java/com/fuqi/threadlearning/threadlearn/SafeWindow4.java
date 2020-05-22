@@ -21,6 +21,9 @@ public class SafeWindow4 extends Thread {
         }
     }
 
+    /**
+     * 这里的同步方法需要定义成静态方法
+     */
     private static synchronized void show(){
         if (ticket > 0){
             try {
