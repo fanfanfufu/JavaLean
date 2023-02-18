@@ -1,5 +1,8 @@
 package com.fuqi.designmodellearn.singletonlearn;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+
 /**
  * @Description: 单例模式的实现练习1：饿汉式实现
  * @Author 傅琦
@@ -7,12 +10,20 @@ package com.fuqi.designmodellearn.singletonlearn;
  * @Version V1.0
  */
 public class SingletonTest1 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         Bank bank1 = Bank.getInstance();
         Bank bank2 = Bank.getInstance();
 
         // 结果为true
         System.out.println(bank1 == bank2);
+
+        // 通过反射的方式
+        Class<Bank> bankClass = Bank.class;
+        Constructor<Bank> bankClassConstructor = bankClass.getDeclaredConstructor();
+        bankClassConstructor.setAccessible(true);
+        Bank bank = bankClassConstructor.newInstance();
+        // 结果为false
+        System.out.println(bank == bank1);
     }
 }
 
