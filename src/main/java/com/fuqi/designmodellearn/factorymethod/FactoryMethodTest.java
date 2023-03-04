@@ -2,8 +2,6 @@ package com.fuqi.designmodellearn.factorymethod;
 
 import com.fuqi.designmodellearn.simplefactorymodulelearn.carfactory.Car;
 
-import java.util.Collection;
-
 /**
  * @author FuQi
  * @date 2023/3/4 14:26
